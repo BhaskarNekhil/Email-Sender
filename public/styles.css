@@ -1,0 +1,49 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: #f3f5f9;
+  color: #202938;
+  font-family: Arial, sans-serif;
+}
+.card {
+  width: min(100%, 560px);
+  padding: 32px;
+  background: #fff;
+  border: 1px solid #e3e7ee;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px #18243a12;
+}
+h1 { margin: 0 0 8px; font-size: 26px; }
+.intro { margin: 0 0 24px; color: #687386; }
+form { display: grid; gap: 10px; }
+label { margin-top: 8px; font-weight: 600; }
+input, textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #cbd2de;
+  border-radius: 7px;
+  font: inherit;
+  resize: vertical;
+}
+input:focus, textarea:focus { outline: 2px solid #9bbcfb; border-color: #3975e8; }
+small { margin-top: -4px; color: #687386; line-height: 1.45; }
+button {
+  margin-top: 12px;
+  padding: 12px;
+  border: 0;
+  border-radius: 7px;
+  background: #2865d7;
+  color: white;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+button:disabled { opacity: .65; cursor: wait; }
+#status { min-height: 1.3em; margin: 2px 0 0; }
+#status.success { color: #167343; }
+#status.error { color: #b42318; }
+@media (max-width: 480px) { .card { padding: 22px; } }
